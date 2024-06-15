@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "more-vaults",
+	"version": "${version}",
+	"name": "More Vaults",
+	"description": "Adds more types of vaults to Minecraft!",
+	"authors": [
+		"bubbaboogs"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/more-vaults/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.bubbaboogs.morevaults.MoreVaults"
+		],
+    "client": [
+      "com.bubbaboogs.morevaults.MoreVaultsClient"
+    ],
+		"fabric-datagen": [
+			"com.bubbaboogs.morevaults.MoreVaultsDataGenerator"
+		]
+	},
+	"mixins": [
+		"more-vaults.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
